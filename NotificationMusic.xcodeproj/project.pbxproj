@@ -14,6 +14,9 @@
 		8949AAA11D7EB904000BF75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8949AA9F1D7EB904000BF75F /* LaunchScreen.storyboard */; };
 		8949AAAC1D7EB904000BF75F /* NotificationMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949AAAB1D7EB904000BF75F /* NotificationMusicTests.swift */; };
 		8949AAB71D7EB904000BF75F /* NotificationMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949AAB61D7EB904000BF75F /* NotificationMusicUITests.swift */; };
+		89744AD71D80168400954A6B /* TFAudioCutoffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89744AD41D80168400954A6B /* TFAudioCutoffer.swift */; };
+		89744AD81D80168400954A6B /* TFCustomNotificationSoundProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89744AD51D80168400954A6B /* TFCustomNotificationSoundProcessor.swift */; };
+		89744AD91D80168400954A6B /* TFToolsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89744AD61D80168400954A6B /* TFToolsCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		8949AAB21D7EB904000BF75F /* NotificationMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8949AAB61D7EB904000BF75F /* NotificationMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMusicUITests.swift; sourceTree = "<group>"; };
 		8949AAB81D7EB904000BF75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89744AD41D80168400954A6B /* TFAudioCutoffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFAudioCutoffer.swift; sourceTree = "<group>"; };
+		89744AD51D80168400954A6B /* TFCustomNotificationSoundProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCustomNotificationSoundProcessor.swift; sourceTree = "<group>"; };
+		89744AD61D80168400954A6B /* TFToolsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFToolsCollection.swift; sourceTree = "<group>"; };
+		89744ADF1D80172600954A6B /* 短信01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "短信01.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +106,9 @@
 			children = (
 				8949AA961D7EB904000BF75F /* AppDelegate.swift */,
 				8949AA981D7EB904000BF75F /* ViewController.swift */,
-				8949AA9A1D7EB904000BF75F /* Main.storyboard */,
-				8949AA9D1D7EB904000BF75F /* Assets.xcassets */,
-				8949AA9F1D7EB904000BF75F /* LaunchScreen.storyboard */,
-				8949AAA21D7EB904000BF75F /* Info.plist */,
+				89744AD31D80168400954A6B /* soundProcessor */,
+				89744ADA1D80168D00954A6B /* supportFiles */,
+				8949AAC41D7EBB39000BF75F /* sounds */,
 			);
 			path = NotificationMusic;
 			sourceTree = "<group>";
@@ -123,6 +129,35 @@
 				8949AAB81D7EB904000BF75F /* Info.plist */,
 			);
 			path = NotificationMusicUITests;
+			sourceTree = "<group>";
+		};
+		8949AAC41D7EBB39000BF75F /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				89744ADF1D80172600954A6B /* 短信01.caf */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		89744AD31D80168400954A6B /* soundProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				89744AD41D80168400954A6B /* TFAudioCutoffer.swift */,
+				89744AD51D80168400954A6B /* TFCustomNotificationSoundProcessor.swift */,
+				89744AD61D80168400954A6B /* TFToolsCollection.swift */,
+			);
+			path = soundProcessor;
+			sourceTree = "<group>";
+		};
+		89744ADA1D80168D00954A6B /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8949AA9A1D7EB904000BF75F /* Main.storyboard */,
+				8949AA9D1D7EB904000BF75F /* Assets.xcassets */,
+				8949AA9F1D7EB904000BF75F /* LaunchScreen.storyboard */,
+				8949AAA21D7EB904000BF75F /* Info.plist */,
+			);
+			name = supportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89744AD91D80168400954A6B /* TFToolsCollection.swift in Sources */,
+				89744AD81D80168400954A6B /* TFCustomNotificationSoundProcessor.swift in Sources */,
+				89744AD71D80168400954A6B /* TFAudioCutoffer.swift in Sources */,
 				8949AA991D7EB904000BF75F /* ViewController.swift in Sources */,
 				8949AA971D7EB904000BF75F /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +522,7 @@
 				8949AABD1D7EB904000BF75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8949AABE1D7EB904000BF75F /* Build configuration list for PBXNativeTarget "NotificationMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +531,7 @@
 				8949AAC01D7EB904000BF75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8949AAC11D7EB904000BF75F /* Build configuration list for PBXNativeTarget "NotificationMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +540,7 @@
 				8949AAC31D7EB904000BF75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
