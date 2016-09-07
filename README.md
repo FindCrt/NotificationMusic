@@ -135,6 +135,3 @@ dispatch_async(dispatch_get_main_queue(), {
 
 4、注意info.plist文件里面要配置Document types,才能从其他设备或应用接收资源。
 
-demo地址[NotificationMusic](https://github.com/ToFind1991/NotificationMusic)
-
-觉得ok，点个赞，github上stat下，3Q!
